@@ -53,6 +53,6 @@ int main() {
     auto end_time = chrono::steady_clock::now();
     chrono::duration<double> work_time = end_time - start_time;
 
-    osyncstream(cout) << "\nЧас виконання: " << fixed << setprecision(2) << work_time.count() << " секунд" << endl;
+    osyncstream(cout) << "\nWork time: " << fixed << setprecision(4) << work_time.count() << " seconds" << endl;
     return 0;
 }
